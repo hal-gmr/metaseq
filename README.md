@@ -1,3 +1,34 @@
+# Fine Tuning Project - Hal Johnson
+Fine tuning the massive OPT 175 to recognize similar names and persons by their human names.
+This project improves its performance and efficiency by focusing on a specific area of expertise.
+
+#Prerequisites
+Meta's 17b billion param ai model aka OPT-175B
+A dataset for the specialized names use case
+A suitable computing environment (e.g., GPU-enabled machine or cloud instance)
+#Step 1: Prepare the Dataset
+Collect and preprocess a dataset suitable for fine-tuning (e.g., JSON)
+Split the dataset into training, validation, and testing sets (e.g., 80% for training, 10% for validation, and 10% for testing)
+#Step 2: Set Up the Fine-Tuning Environment
+Install PyTorch and the Hugging Face Transformers library
+Clone the Meta OS LLM repository and navigate to the directory
+Install the required dependencies and setup the environment
+#Step 3: Load the Pretrained Model
+Import the OS LLM model and load the pretrained weights
+Configure the model for fine-tuning (e.g., set the number of layers to freeze)
+#Step 4: Fine-Tune the Model
+Create a custom dataset class for the name dataset
+Define a data loader for the training and validation sets
+Set up the fine-tuning loop, including loss calculation, backward pass, and optimization
+Monitor performance on the validation set and adjust hyperparameters as needed
+#Step 5: Evaluate and Test the Fine-Tuned Model
+Evaluate the fine-tuned model on the test set
+Compare performance to the original OS LLM and other baselines
+Test the model on new, unseen data to ensure generalizability
+#Step 6: Deploy the Fine-Tuned Model
+Save the fine-tuned model weights and configuration
+Deploy the model in an application or service
+Monitor performance and retrain as necessary
 
 
 # Metaseq
